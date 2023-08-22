@@ -1,0 +1,101 @@
+body {
+  font-family: 'Sono', sans-serif;
+  background-color: #A9C9FF;
+background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+
+}
+h1{
+  font-size: 2.5rem;
+}
+.ourplan{
+  display:flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.pricing-container{
+  border-radius:10px;
+  padding:10px;
+  line-height: 40px;
+
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items:center;
+  height:70vh;
+  box-shadow:var(--shadow-elevation-medium);
+}
+.pricing-plan{
+  flex:1;
+  padding:10px;
+  margin:20px;
+  min-width:400px;
+  text-align:center;
+  background-color: rgb(243, 250, 251);
+  border-radius: 7px;
+  box-shadow:10px;
+  box-shadow:var(--shadow-elevation-medium);
+}
+:root {
+--shadow-color: 286deg 7% 39%;
+--shadow-elevation-low:
+0px 0.6px 0.7px hsl(var(--shadow-color) / 0.48),
+0.1px 1.1px 1.2px -1.2px hsl(var(--shadow-color) / 0.48),
+0.2px 2.9px 3.3px -2.5px hsl(var(--shadow-color) / 0.48);
+--shadow-elevation-medium:
+0px 0.6px 0.7px hsl(var(--shadow-color) / 0.51),
+0.1px 2.3px 2.6px -0.8px hsl(var(--shadow-color) / 0.51),
+0.3px 6px 6.8px -1.7px hsl(var(--shadow-color) / 0.51),
+0.8px 14.7px 16.6px -2.5px hsl(var(--shadow-color) / 0.51);
+--shadow-elevation-high:
+0px 0.6px 0.7px hsl(var(--shadow-color) / 0.47),
+0.2px 4.8px 5.4px -0.4px hsl(var(--shadow-color) / 0.47),
+0.5px 9.1px 10.3px -0.7px hsl(var(--shadow-color) / 0.47),
+0.8px 15.1px 17px -1.1px hsl(var(--shadow-color) / 0.47),
+1.3px 24.2px 27.3px -1.4px hsl(var(--shadow-color) / 0.47),
+2px 38px 42.8px -1.8px hsl(var(--shadow-color) / 0.47),
+3px 57.9px 65.2px -2.1px hsl(var(--shadow-color) / 0.47),
+4.4px 85.4px 96.2px -2.5px hsl(var(--shadow-color) / 0.47);
+}
+ul{
+  list-style: none;
+}
+  button{
+    background-color: rgb(251, 137, 44);
+      color:rgb(0, 0, 0);
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 20px;
+      box-shadow:4px 4px 0 rgb(121, 190, 240);
+     transition: transform 0.2s,box-shadow 0.2s;
+    }
+    button:active{
+      transform : translateX(4px) translateY(4px);
+      box-shadow: 0 0 0  rgb(121, 190, 240);
+    }
+
+.pay{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 1050px) {
+.pricing-container{
+  flex-direction:column;
+  height:100%;
+}
+}
+.pricing-plan:hover{
+  box-shadow:var(--shadow-elevation-high)
+}
+#pay-btn{
+  padding:10px;
+}
+.selected{
+  background-color: green;
+  color:bisque;
+}
+marquee{
+  direction:left;
+  behavior:slide;
+  background-color: lightcoral;
+}
